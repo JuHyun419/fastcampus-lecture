@@ -1,1 +1,15 @@
-
+spring:
+  profiles:
+    active:
+      - local
+    group:
+      local:
+        - site-local
+        - db-local
+      dev:
+        - site-dev
+        - db-dev
+    include:
+      - db
+      - my-service
+      - site

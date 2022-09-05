@@ -1,0 +1,23 @@
+site:
+  author-name: JuHyun
+  author-email: a@a.com
+
+--- # local
+spring:
+  config:
+    activate:
+      on-profile: "site-local"
+
+site:
+  author-name: JuHyun-local
+  author-email: a.local@a.com
+
+--- # dev
+spring:
+  config:
+    activate:
+      on-profile: "site-dev"
+
+site:
+  author-name: JuHyun-dev
+  author-email: a.dev@a.com
